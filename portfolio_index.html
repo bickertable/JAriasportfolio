@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Jamie Arias — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,500;0,600;0,700;1,500&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0E1B31;
+    --navy-text:#101C33;
+    --cream:#EEEEEC;
+    --greige:#E4E3DF;
+    --teal:#7FD8E2;
+    --muted-on-dark: rgba(242,240,234,0.62);
+    --muted-on-light: rgba(16,28,51,0.6);
+    --line: rgba(16,28,51,0.12);
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; background:var(--cream); color:var(--navy-text); font-family:'IBM Plex Sans', sans-serif;
+    padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px);
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap{max-width:920px; margin:0 auto; padding:0 28px;}
+  a{color:inherit; text-decoration:none;}
+
+  .topbar{
+    background:var(--navy); color:var(--cream);
+    padding:22px 0;
+  }
+  .topbar .wrap{ display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px; }
+  .wordmark{
+    font-family:'Source Serif 4', serif; font-weight:700; font-size:15px;
+    letter-spacing:0.45px; color:var(--cream);
+  }
+  .topbar .tag{
+    font-family:'IBM Plex Mono', monospace; font-size:11px; letter-spacing:1.1px;
+    text-transform:uppercase; color:var(--muted-on-dark);
+  }
+
+  header.hero{ background:var(--navy); color:var(--cream); padding:72px 0 64px; }
+  .eyebrow{ font-family:'IBM Plex Mono', monospace; font-size:11px; letter-spacing:1.1px; text-transform:uppercase; color:var(--teal); margin:0 0 20px 0; }
+  h1{ font-family:'Source Serif 4', serif; font-weight:600; font-size:clamp(32px, 5vw, 48px); line-height:1.15; margin:0 0 18px 0; max-width:640px; color:var(--cream); }
+  .hero-sub{ font-size:16.5px; line-height:1.75; max-width:560px; color:var(--muted-on-dark); margin:0; }
+
+  section{padding:56px 0;}
+  section.greige{ background:var(--greige); }
+  h2.label{ font-family:'IBM Plex Mono', monospace; font-weight:500; font-size:11.5px; text-transform:uppercase; letter-spacing:0.1em; color:var(--muted-on-light); margin:0 0 28px 0; }
+
+  .grid{ display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+  @media (max-width:680px){ .grid{grid-template-columns:1fr;} }
+
+  .tile{
+    display:block; background:#F7F6F3; border:1px solid var(--line);
+    border-radius:3px; padding:28px 26px; transition:border-color .15s ease, box-shadow .15s ease;
+  }
+  .tile:hover{ border-color:var(--navy); box-shadow:0 2px 10px rgba(16,28,51,0.08); }
+  .tile.featured{
+    display:block; width:100%; box-sizing:border-box;
+    background:var(--navy); color:var(--cream); border:none; padding:44px 40px;
+    margin:0 0 16px 0;
+  }
+  .tile.featured .tile-desc{ color:var(--muted-on-dark); max-width:640px; }
+  .tile.featured .tile-link{ color:var(--teal); }
+
+  .tile-tag{ font-family:'IBM Plex Mono', monospace; font-size:11px; letter-spacing:0.08em; text-transform:uppercase; color:#3D6E77; margin:0 0 12px 0; font-weight:500; }
+  .tile.featured .tile-tag{ color:var(--teal); }
+  .tile-title{ font-family:'Source Serif 4', serif; font-weight:600; font-size:21px; margin:0 0 10px 0; }
+  .tile.featured .tile-title{ font-size:26px; }
+  .tile-desc{ font-size:14px; line-height:1.65; color:var(--muted-on-light); margin:0 0 18px 0; }
+  .tile-link{ font-family:'IBM Plex Mono', monospace; font-size:12px; letter-spacing:0.03em; color:var(--navy); font-weight:500; }
+
+  footer{ background:var(--navy); color:var(--muted-on-dark); padding:36px 0; }
+  footer p{ color:var(--muted-on-dark); font-size:13px; margin:0; font-family:'IBM Plex Sans', sans-serif; }
+  footer a{ color:var(--cream); border-bottom:1px solid rgba(238,238,236,0.3); }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span class="wordmark">BICKER TABLE ADVISORY</span>
+    <span class="tag">Portfolio</span>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Selected Work</p>
+    <h1>Jamie Arias</h1>
+    <p class="hero-sub">Digital content and creative strategy across publishing, integrated marketing, and AI-assisted production. Recent work below, from brand strategy through finished, live execution.</p>
+  </div>
+</header>
+
+<section class="greige">
+  <div class="wrap">
+    <h2 class="label">Case Study &amp; Live Work</h2>
+
+    <a class="tile featured" href="https://claude.ai/artifact/DxnvJqnngi7BMPD64Hv4Gx" target="_blank" rel="noopener">
+      <p class="tile-tag">Case Study</p>
+      <p class="tile-title">Pepe Nero + Pizza Plus</p>
+      <p class="tile-desc">Destination marketing, brand, and digital transformation for two family-run restaurants in Kasane, Botswana, gateway to Chobe National Park. Brand strategy, two live websites, review systems, and staff training built from a country apart.</p>
+      <span class="tile-link">Read the case study &rarr;</span>
+    </a>
+
+    <div class="grid">
+
+      <a class="tile" href="https://bickertable.github.io/pepenero/" target="_blank" rel="noopener">
+        <p class="tile-tag">Live Site</p>
+        <p class="tile-title">Pepe Nero Ristorante Italiano</p>
+        <p class="tile-desc">Story, menu, and reservations for an Italian kitchen on President Avenue, Kasane.</p>
+        <span class="tile-link">Visit the site &rarr;</span>
+      </a>
+
+      <a class="tile" href="https://bickertable.github.io/pizzaplus/" target="_blank" rel="noopener">
+        <p class="tile-tag">Live Site</p>
+        <p class="tile-title">Pizza Plus Coffee &amp; Curry</p>
+        <p class="tile-desc">Menu, reviews, and takeaway ordering for Kasane's number one rated restaurant.</p>
+        <span class="tile-link">Visit the site &rarr;</span>
+      </a>
+
+      <a class="tile" href="https://bickertable.github.io/higherwellness/" target="_blank" rel="noopener">
+        <p class="tile-tag">Live Site</p>
+        <p class="tile-title">Higher Purpose Wellness</p>
+        <p class="tile-desc">Brand and web presence for a holistic bodywork and detoxification practice.</p>
+        <span class="tile-link">Visit the site &rarr;</span>
+      </a>
+
+      <a class="tile" href="http://bickertable.com/" target="_blank" rel="noopener">
+        <p class="tile-tag">Advisory Practice</p>
+        <p class="tile-title">Bicker Table Advisory</p>
+        <p class="tile-desc">Strategic advisory practice built and run alongside client brand and digital work.</p>
+        <span class="tile-link">Visit the site &rarr;</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>Jamie Arias &middot; <a href="mailto:jamielynarias@gmail.com">jamielynarias@gmail.com</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
